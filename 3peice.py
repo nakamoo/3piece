@@ -251,7 +251,7 @@ def game_reset():
 def game():
 
     game_init()
-    wait_time = 1000
+    wait_time = 0
     scoreline = [0, 0, 0]
     players = [AI(), CPU()]
     phase = 0
@@ -326,7 +326,7 @@ def game():
 
         # print "turn : ", phase
         phase += 1
-        if phase % 1000 == 0:
+        if phase % 10 == 0:
             print "Scoreline : ", scoreline
             players[0].good_bookmark += scoreline[0]
             players[0].bad_bookmark += scoreline[1]

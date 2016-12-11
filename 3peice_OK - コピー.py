@@ -185,7 +185,7 @@ def game_reset():
 def game():
 
     game_init()
-    wait_time = 1000
+    wait_time = 0
     scoreline = [0, 0, 0]
     players = [AI(), CPU()]
     phase = 0
